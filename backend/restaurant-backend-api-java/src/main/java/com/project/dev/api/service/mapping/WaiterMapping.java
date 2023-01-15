@@ -48,7 +48,7 @@ public interface WaiterMapping extends GenericMapping<WaiterDTO, Waiter> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intWaiterId", target = "intWaiterId")
     @Override
-    public WaiterDTO obtenerDto(Waiter entity);
+    public WaiterDTO getDto(Waiter entity);
 
     /**
      * TODO: Definición de {@code withId}.

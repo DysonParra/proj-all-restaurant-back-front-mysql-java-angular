@@ -48,7 +48,7 @@ public interface MealMapping extends GenericMapping<MealDTO, Meal> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intMealId", target = "intMealId")
     @Override
-    public MealDTO obtenerDto(Meal entity);
+    public MealDTO getDto(Meal entity);
 
     /**
      * TODO: Definición de {@code withId}.

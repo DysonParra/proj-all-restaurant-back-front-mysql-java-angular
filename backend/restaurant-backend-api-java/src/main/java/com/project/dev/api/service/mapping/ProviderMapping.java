@@ -48,7 +48,7 @@ public interface ProviderMapping extends GenericMapping<ProviderDTO, Provider> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intProviderId", target = "intProviderId")
     @Override
-    public ProviderDTO obtenerDto(Provider entity);
+    public ProviderDTO getDto(Provider entity);
 
     /**
      * TODO: Definición de {@code withId}.

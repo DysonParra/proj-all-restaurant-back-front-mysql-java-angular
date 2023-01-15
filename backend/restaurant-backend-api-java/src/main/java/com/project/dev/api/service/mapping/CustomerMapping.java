@@ -48,7 +48,7 @@ public interface CustomerMapping extends GenericMapping<CustomerDTO, Customer> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intCustomerId", target = "intCustomerId")
     @Override
-    public CustomerDTO obtenerDto(Customer entity);
+    public CustomerDTO getDto(Customer entity);
 
     /**
      * TODO: Definición de {@code withId}.

@@ -48,7 +48,7 @@ public interface OrderMapping extends GenericMapping<OrderDTO, Order> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intOrderId", target = "intOrderId")
     @Override
-    public OrderDTO obtenerDto(Order entity);
+    public OrderDTO getDto(Order entity);
 
     /**
      * TODO: Definición de {@code withId}.

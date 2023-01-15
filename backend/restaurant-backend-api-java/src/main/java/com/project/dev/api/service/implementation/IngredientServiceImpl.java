@@ -60,7 +60,7 @@ public class IngredientServiceImpl implements IngredientService {
     @Override
     public List<IngredientDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Ingredient");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class IngredientServiceImpl implements IngredientService {
     @Override
     public Page<IngredientDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Ingredient con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class IngredientServiceImpl implements IngredientService {
         Ingredient entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        IngredientDTO actualEntity = entityMapping.obtenerDto(entity);
+        IngredientDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class IngredientServiceImpl implements IngredientService {
         log.debug("Solicitud para buscar la Entidad tipo Ingredient: {}", id);
         Ingredient searchedEntity = entityRepository.findById(Long.parseLong(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class IngredientServiceImpl implements IngredientService {
     @Override
     public List<IngredientDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Ingredient: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class IngredientServiceImpl implements IngredientService {
     @Override
     public Page<IngredientDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo Ingredient para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

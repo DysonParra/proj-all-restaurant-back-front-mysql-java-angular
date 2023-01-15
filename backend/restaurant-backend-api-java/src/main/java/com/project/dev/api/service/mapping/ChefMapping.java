@@ -48,7 +48,7 @@ public interface ChefMapping extends GenericMapping<ChefDTO, Chef> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intChefId", target = "intChefId")
     @Override
-    public ChefDTO obtenerDto(Chef entity);
+    public ChefDTO getDto(Chef entity);
 
     /**
      * TODO: Definición de {@code withId}.

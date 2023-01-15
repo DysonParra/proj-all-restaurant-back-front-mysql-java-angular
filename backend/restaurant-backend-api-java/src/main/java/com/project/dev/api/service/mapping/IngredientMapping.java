@@ -48,7 +48,7 @@ public interface IngredientMapping extends GenericMapping<IngredientDTO, Ingredi
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intIngredientId", target = "intIngredientId")
     @Override
-    public IngredientDTO obtenerDto(Ingredient entity);
+    public IngredientDTO getDto(Ingredient entity);
 
     /**
      * TODO: Definición de {@code withId}.
