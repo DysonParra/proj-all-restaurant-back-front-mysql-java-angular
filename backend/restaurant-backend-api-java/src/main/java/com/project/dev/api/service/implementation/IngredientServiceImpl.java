@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Ingredient;
 import com.project.dev.api.dto.IngredientDTO;
 import com.project.dev.api.repository.IngredientRepository;
-import com.project.dev.api.service.IngredientService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.IngredientMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class IngredientServiceImpl implements IngredientService {
+public class IngredientServiceImpl implements GenericService<IngredientDTO> {
 
     private final Logger log = LoggerFactory.getLogger(IngredientServiceImpl.class);
     private final IngredientRepository entityRepository;

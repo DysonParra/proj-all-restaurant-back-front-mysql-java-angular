@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.ChefDTO;
-import com.project.dev.api.service.ChefService;
+import com.project.dev.api.service.implementation.ChefServiceImpl;
 import com.project.dev.api.web.rest.assembler.ChefRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class ChefRest {
 
     private final Logger log = LoggerFactory.getLogger(ChefRest.class);
-    private final ChefService entityService;
+    private final ChefServiceImpl entityService;
     private final ChefRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class ChefRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public ChefRest(ChefService entityService,
+    public ChefRest(ChefServiceImpl entityService,
             ChefRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

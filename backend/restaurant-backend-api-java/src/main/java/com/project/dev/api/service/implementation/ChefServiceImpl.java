@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Chef;
 import com.project.dev.api.dto.ChefDTO;
 import com.project.dev.api.repository.ChefRepository;
-import com.project.dev.api.service.ChefService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.ChefMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class ChefServiceImpl implements ChefService {
+public class ChefServiceImpl implements GenericService<ChefDTO> {
 
     private final Logger log = LoggerFactory.getLogger(ChefServiceImpl.class);
     private final ChefRepository entityRepository;

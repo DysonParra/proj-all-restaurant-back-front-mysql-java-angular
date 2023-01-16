@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Meal;
 import com.project.dev.api.dto.MealDTO;
 import com.project.dev.api.repository.MealRepository;
-import com.project.dev.api.service.MealService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.MealMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class MealServiceImpl implements MealService {
+public class MealServiceImpl implements GenericService<MealDTO> {
 
     private final Logger log = LoggerFactory.getLogger(MealServiceImpl.class);
     private final MealRepository entityRepository;

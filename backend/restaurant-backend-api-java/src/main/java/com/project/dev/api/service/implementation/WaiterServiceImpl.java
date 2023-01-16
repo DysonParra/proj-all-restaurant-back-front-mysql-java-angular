@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Waiter;
 import com.project.dev.api.dto.WaiterDTO;
 import com.project.dev.api.repository.WaiterRepository;
-import com.project.dev.api.service.WaiterService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.WaiterMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class WaiterServiceImpl implements WaiterService {
+public class WaiterServiceImpl implements GenericService<WaiterDTO> {
 
     private final Logger log = LoggerFactory.getLogger(WaiterServiceImpl.class);
     private final WaiterRepository entityRepository;

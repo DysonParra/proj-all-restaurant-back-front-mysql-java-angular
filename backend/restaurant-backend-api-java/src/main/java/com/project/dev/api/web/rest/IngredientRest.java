@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.IngredientDTO;
-import com.project.dev.api.service.IngredientService;
+import com.project.dev.api.service.implementation.IngredientServiceImpl;
 import com.project.dev.api.web.rest.assembler.IngredientRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class IngredientRest {
 
     private final Logger log = LoggerFactory.getLogger(IngredientRest.class);
-    private final IngredientService entityService;
+    private final IngredientServiceImpl entityService;
     private final IngredientRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class IngredientRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public IngredientRest(IngredientService entityService,
+    public IngredientRest(IngredientServiceImpl entityService,
             IngredientRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

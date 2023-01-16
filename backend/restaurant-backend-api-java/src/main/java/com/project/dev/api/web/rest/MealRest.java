@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.MealDTO;
-import com.project.dev.api.service.MealService;
+import com.project.dev.api.service.implementation.MealServiceImpl;
 import com.project.dev.api.web.rest.assembler.MealRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class MealRest {
 
     private final Logger log = LoggerFactory.getLogger(MealRest.class);
-    private final MealService entityService;
+    private final MealServiceImpl entityService;
     private final MealRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class MealRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public MealRest(MealService entityService,
+    public MealRest(MealServiceImpl entityService,
             MealRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

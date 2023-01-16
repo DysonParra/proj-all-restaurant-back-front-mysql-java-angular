@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.OrderDTO;
-import com.project.dev.api.service.OrderService;
+import com.project.dev.api.service.implementation.OrderServiceImpl;
 import com.project.dev.api.web.rest.assembler.OrderRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class OrderRest {
 
     private final Logger log = LoggerFactory.getLogger(OrderRest.class);
-    private final OrderService entityService;
+    private final OrderServiceImpl entityService;
     private final OrderRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class OrderRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public OrderRest(OrderService entityService,
+    public OrderRest(OrderServiceImpl entityService,
             OrderRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

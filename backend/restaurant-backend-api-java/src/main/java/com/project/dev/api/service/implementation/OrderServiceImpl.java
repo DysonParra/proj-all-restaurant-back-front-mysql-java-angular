@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Order;
 import com.project.dev.api.dto.OrderDTO;
 import com.project.dev.api.repository.OrderRepository;
-import com.project.dev.api.service.OrderService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.OrderMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class OrderServiceImpl implements OrderService {
+public class OrderServiceImpl implements GenericService<OrderDTO> {
 
     private final Logger log = LoggerFactory.getLogger(OrderServiceImpl.class);
     private final OrderRepository entityRepository;
