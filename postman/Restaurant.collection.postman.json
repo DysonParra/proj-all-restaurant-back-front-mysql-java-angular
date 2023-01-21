@@ -339,15 +339,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -385,15 +385,6 @@
 						{
 							"name": "Buscar Registros (Resultado vacío)",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -445,15 +436,6 @@
 						{
 							"name": "Buscar Registros",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -519,16 +501,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -582,16 +563,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).not.be.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -679,15 +659,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1081,15 +1061,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1127,15 +1107,6 @@
 						{
 							"name": "Buscar Registros (Resultado vacío)",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -1187,15 +1158,6 @@
 						{
 							"name": "Buscar Registros",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -1261,16 +1223,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1324,16 +1285,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).not.be.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1421,15 +1381,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1821,15 +1781,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1867,15 +1827,6 @@
 						{
 							"name": "Buscar Registros (Resultado vacío)",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -1927,15 +1878,6 @@
 						{
 							"name": "Buscar Registros",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -2001,16 +1943,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -2064,16 +2005,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).not.be.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -2161,15 +2101,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -2561,15 +2501,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -2607,15 +2547,6 @@
 						{
 							"name": "Buscar Registros (Resultado vacío)",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -2667,15 +2598,6 @@
 						{
 							"name": "Buscar Registros",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -2741,16 +2663,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -2804,16 +2725,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).not.be.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -2901,15 +2821,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -3299,15 +3219,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -3345,15 +3265,6 @@
 						{
 							"name": "Buscar Registros (Resultado vacío)",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -3405,15 +3316,6 @@
 						{
 							"name": "Buscar Registros",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -3479,16 +3381,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -3542,16 +3443,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).not.be.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -3639,15 +3539,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -4037,15 +3937,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -4083,15 +3983,6 @@
 						{
 							"name": "Buscar Registros (Resultado vacío)",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -4143,15 +4034,6 @@
 						{
 							"name": "Buscar Registros",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -4217,16 +4099,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -4280,16 +4161,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).not.be.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -4377,15 +4257,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -4779,15 +4659,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -4825,15 +4705,6 @@
 						{
 							"name": "Buscar Registros (Resultado vacío)",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -4885,15 +4756,6 @@
 						{
 							"name": "Buscar Registros",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -4959,16 +4821,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -5022,16 +4883,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).not.be.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -5119,15 +4979,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -5521,15 +5381,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -5567,15 +5427,6 @@
 						{
 							"name": "Buscar Registros (Resultado vacío)",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -5627,15 +5478,6 @@
 						{
 							"name": "Buscar Registros",
 							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								},
 								{
 									"listen": "test",
 									"script": {
@@ -5701,16 +5543,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -5764,16 +5605,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Búsqueda no está vacía.\", function () {",
+											"pm.test(\"Lista no está vacía ('_embedded' not undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).not.be.eql(undefined);",
-											"    pm.expect(jsonData.length).not.be.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).not.be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -5861,15 +5701,15 @@
 											"    pm.expect(jsonData.error).to.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Body es un array\", function () {",
-											"    pm.expect(pm.response.json()).to.be.an('array');",
+											"pm.test(\"Se obtuvieron enlaces.\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData._links).not.be.eql(undefined);",
 											"});",
 											"",
-											"pm.test(\"Lista está vacía.\", function () {",
+											"pm.test(\"Lista está vacía ('_embedded' undefined).\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.length).be.to.eql(0);",
-											"});",
-											""
+											"    pm.expect(jsonData._embedded).be.to.eql(undefined);",
+											"});"
 										],
 										"type": "text/javascript"
 									}
