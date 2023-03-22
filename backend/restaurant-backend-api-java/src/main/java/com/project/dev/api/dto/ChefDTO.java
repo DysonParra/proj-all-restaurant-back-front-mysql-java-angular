@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ChefDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {ChefDTO}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ChefRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {ChefRest}
  *
  * @version         2.0
  *

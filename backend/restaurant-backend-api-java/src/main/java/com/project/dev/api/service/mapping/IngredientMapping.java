@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngredientMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {IngredientMapping}
  *
  * @version         2.0
  *

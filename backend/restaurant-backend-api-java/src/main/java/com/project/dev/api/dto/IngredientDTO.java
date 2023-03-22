@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngredientDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {IngredientDTO}
  *
  * @version         2.0
  *

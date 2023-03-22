@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngredientServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {IngredientServiceImpl}
  *
  * @version         2.0
  *

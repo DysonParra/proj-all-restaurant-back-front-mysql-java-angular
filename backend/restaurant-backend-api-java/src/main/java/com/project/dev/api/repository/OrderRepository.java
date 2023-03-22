@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {OrderRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {OrderRepository}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {OrderRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {OrderRest}
  *
  * @version         2.0
  *

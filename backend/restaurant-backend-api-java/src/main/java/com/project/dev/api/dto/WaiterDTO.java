@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {WaiterDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {WaiterDTO}
  *
  * @version         2.0
  *

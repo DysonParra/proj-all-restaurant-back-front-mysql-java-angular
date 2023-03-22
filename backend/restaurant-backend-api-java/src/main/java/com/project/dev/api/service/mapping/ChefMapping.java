@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ChefMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {ChefMapping}
  *
  * @version         2.0
  *

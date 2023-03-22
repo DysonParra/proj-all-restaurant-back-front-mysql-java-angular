@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngredientRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {IngredientRest}
  *
  * @version         2.0
  *

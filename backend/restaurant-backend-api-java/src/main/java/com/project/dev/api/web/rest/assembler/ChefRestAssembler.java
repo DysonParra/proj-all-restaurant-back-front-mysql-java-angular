@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ChefRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {ChefRestAssembler}
  *
  * @version         2.0
  *

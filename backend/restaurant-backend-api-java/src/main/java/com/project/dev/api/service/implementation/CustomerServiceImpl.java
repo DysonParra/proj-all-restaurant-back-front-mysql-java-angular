@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CustomerServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {CustomerServiceImpl}
  *
  * @version         2.0
  *

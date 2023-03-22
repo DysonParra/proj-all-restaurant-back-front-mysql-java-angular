@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {SupplierRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {SupplierRestAssembler}
  *
  * @version         2.0
  *

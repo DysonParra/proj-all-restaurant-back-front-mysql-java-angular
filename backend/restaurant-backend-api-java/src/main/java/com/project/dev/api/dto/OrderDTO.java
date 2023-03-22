@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {OrderDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {OrderDTO}
  *
  * @version         2.0
  *

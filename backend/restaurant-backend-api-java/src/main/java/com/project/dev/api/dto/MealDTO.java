@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MealDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {MealDTO}
  *
  * @version         2.0
  *

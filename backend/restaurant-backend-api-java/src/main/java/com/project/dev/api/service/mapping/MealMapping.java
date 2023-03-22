@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MealMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {MealMapping}
  *
  * @version         2.0
  *

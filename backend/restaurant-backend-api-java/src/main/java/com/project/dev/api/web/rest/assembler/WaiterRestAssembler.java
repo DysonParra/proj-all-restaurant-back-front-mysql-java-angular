@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {WaiterRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {WaiterRestAssembler}
  *
  * @version         2.0
  *

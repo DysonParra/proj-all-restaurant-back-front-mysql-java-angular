@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MealRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {MealRepository}
  *
  * @version         2.0
  *

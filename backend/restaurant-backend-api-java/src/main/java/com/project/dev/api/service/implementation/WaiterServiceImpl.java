@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {WaiterServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {WaiterServiceImpl}
  *
  * @version         2.0
  *

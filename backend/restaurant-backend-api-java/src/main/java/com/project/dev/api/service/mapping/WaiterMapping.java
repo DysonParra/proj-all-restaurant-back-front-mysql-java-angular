@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {WaiterMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {WaiterMapping}
  *
  * @version         2.0
  *

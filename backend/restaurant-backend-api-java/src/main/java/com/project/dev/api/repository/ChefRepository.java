@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ChefRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {ChefRepository}
  *
  * @version         2.0
  *

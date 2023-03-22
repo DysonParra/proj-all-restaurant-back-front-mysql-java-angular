@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngredientRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {IngredientRestAssembler}
  *
  * @version         2.0
  *

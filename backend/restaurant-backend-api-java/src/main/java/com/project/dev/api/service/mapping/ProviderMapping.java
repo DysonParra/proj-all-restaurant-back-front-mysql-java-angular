@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ProviderMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {ProviderMapping}
  *
  * @version         2.0
  *

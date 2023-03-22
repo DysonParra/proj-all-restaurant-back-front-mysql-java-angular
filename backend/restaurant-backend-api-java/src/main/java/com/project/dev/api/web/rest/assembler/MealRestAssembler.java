@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MealRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {MealRestAssembler}
  *
  * @version         2.0
  *

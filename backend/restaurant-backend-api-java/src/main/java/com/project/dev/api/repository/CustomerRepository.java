@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CustomerRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {CustomerRepository}
  *
  * @version         2.0
  *

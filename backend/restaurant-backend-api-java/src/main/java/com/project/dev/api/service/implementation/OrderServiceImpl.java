@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {OrderServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {OrderServiceImpl}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {SupplierRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {SupplierRepository}
  *
  * @version         2.0
  *
