@@ -22,7 +22,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code MealDTO}.
+ * TODO: Description of {@code MealDTO}.
  *
  * @author Dyson Parra
  * @since 11

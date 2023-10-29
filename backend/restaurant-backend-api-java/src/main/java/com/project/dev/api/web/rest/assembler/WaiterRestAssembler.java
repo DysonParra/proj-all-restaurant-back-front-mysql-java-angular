@@ -22,7 +22,7 @@ import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.stereotype.Component;
 
 /**
- * TODO: Definición de {@code WaiterRestAssembler}.
+ * TODO: Description of {@code WaiterRestAssembler}.
  *
  * @author Dyson Parra
  * @since 11

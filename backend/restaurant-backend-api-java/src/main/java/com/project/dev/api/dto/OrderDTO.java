@@ -22,7 +22,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code OrderDTO}.
+ * TODO: Description of {@code OrderDTO}.
  *
  * @author Dyson Parra
  * @since 11

@@ -24,7 +24,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code Chef}.
+ * TODO: Description of {@code Chef}.
  *
  * @author Dyson Parra
  * @since 11

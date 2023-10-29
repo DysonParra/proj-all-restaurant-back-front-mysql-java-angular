@@ -24,7 +24,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code Waiter}.
+ * TODO: Description of {@code Waiter}.
  *
  * @author Dyson Parra
  * @since 11

@@ -29,7 +29,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * TODO: Definición de {@code ChefServiceImpl}.
+ * TODO: Description of {@code ChefServiceImpl}.
  *
  * @author Dyson Parra
  * @since 11
