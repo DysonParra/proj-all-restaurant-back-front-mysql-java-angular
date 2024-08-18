@@ -91,8 +91,8 @@ public class MealServiceImpl implements GenericService<MealDTO> {
         Meal entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        MealDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        MealDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

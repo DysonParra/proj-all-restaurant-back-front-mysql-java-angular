@@ -91,8 +91,8 @@ public class IngredientServiceImpl implements GenericService<IngredientDTO> {
         Ingredient entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        IngredientDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        IngredientDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

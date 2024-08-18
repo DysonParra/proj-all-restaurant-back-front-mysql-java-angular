@@ -91,8 +91,8 @@ public class ChefServiceImpl implements GenericService<ChefDTO> {
         Chef entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        ChefDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        ChefDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

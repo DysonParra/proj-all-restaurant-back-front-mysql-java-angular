@@ -91,8 +91,8 @@ public class WaiterServiceImpl implements GenericService<WaiterDTO> {
         Waiter entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        WaiterDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        WaiterDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

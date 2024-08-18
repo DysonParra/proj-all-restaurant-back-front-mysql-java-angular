@@ -91,8 +91,8 @@ public class SupplierServiceImpl implements GenericService<SupplierDTO> {
         Supplier entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        SupplierDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        SupplierDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

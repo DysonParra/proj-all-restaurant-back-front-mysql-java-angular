@@ -91,8 +91,8 @@ public class CustomerServiceImpl implements GenericService<CustomerDTO> {
         Customer entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        CustomerDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        CustomerDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**
