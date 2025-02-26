@@ -49,7 +49,7 @@ public interface WaiterMapping extends GenericMapping<WaiterDTO, Waiter> {
     public WaiterDTO getDto(Waiter entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

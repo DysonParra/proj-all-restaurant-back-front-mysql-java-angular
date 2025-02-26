@@ -49,7 +49,7 @@ public interface MealMapping extends GenericMapping<MealDTO, Meal> {
     public MealDTO getDto(Meal entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

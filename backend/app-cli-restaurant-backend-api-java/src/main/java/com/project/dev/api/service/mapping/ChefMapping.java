@@ -49,7 +49,7 @@ public interface ChefMapping extends GenericMapping<ChefDTO, Chef> {
     public ChefDTO getDto(Chef entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

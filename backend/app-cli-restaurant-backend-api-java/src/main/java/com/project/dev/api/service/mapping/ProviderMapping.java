@@ -49,7 +49,7 @@ public interface ProviderMapping extends GenericMapping<ProviderDTO, Provider> {
     public ProviderDTO getDto(Provider entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

@@ -49,7 +49,7 @@ public interface SupplierMapping extends GenericMapping<SupplierDTO, Supplier> {
     public SupplierDTO getDto(Supplier entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

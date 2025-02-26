@@ -49,7 +49,7 @@ public interface CustomerMapping extends GenericMapping<CustomerDTO, Customer> {
     public CustomerDTO getDto(Customer entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return
