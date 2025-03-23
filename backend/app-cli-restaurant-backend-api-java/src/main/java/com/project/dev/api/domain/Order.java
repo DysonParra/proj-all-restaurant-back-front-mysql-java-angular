@@ -41,9 +41,7 @@ public class Order implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Long intOrderId;
-    @JoinColumn(name = "intCustomerId", referencedColumnName = "intCustomerId")
     private Long intCustomerId;
-    @JoinColumn(name = "intMealId", referencedColumnName = "intMealId")
     private Long intMealId;
 
 }

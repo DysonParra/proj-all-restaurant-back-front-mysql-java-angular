@@ -41,9 +41,7 @@ public class Provider implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Long intProviderId;
-    @JoinColumn(name = "intIngredientId", referencedColumnName = "intIngredientId")
     private Long intIngredientId;
-    @JoinColumn(name = "intSupplierId", referencedColumnName = "intSupplierId")
     private Long intSupplierId;
 
 }

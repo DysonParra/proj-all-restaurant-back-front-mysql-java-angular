@@ -43,7 +43,6 @@ public class Ingredient implements Serializable {
     private Long intIngredientId;
     private String strIngredientName;
     private String strDescription;
-    @JoinColumn(name = "intMealId", referencedColumnName = "intMealId")
     private Long intMealId;
 
 }

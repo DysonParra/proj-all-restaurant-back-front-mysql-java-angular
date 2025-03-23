@@ -46,7 +46,6 @@ public class Supplier implements Serializable {
     @Column(columnDefinition = "TEXT")
     private String txtSupplierName;
     private Integer intPhone;
-    @JoinColumn(name = "intChefId", referencedColumnName = "intChefId")
     private Long intChefId;
 
 }
