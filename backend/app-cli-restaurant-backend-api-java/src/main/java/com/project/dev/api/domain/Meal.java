@@ -41,9 +41,7 @@ public class Meal implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Long intMealId;
-    @Column(length = 45)
     private String strName;
-    @Column(precision = 12, scale = 0)
     private Float fltPrice;
     @JoinColumn(name = "intChefId", referencedColumnName = "intChefId")
     private Long intChefId;

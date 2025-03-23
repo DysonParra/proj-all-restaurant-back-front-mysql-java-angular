@@ -41,9 +41,7 @@ public class Waiter implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Long intWaiterId;
-    @Column(length = 45)
     private String strWaiterName;
-    @Column(precision = 12, scale = 0)
     private Float fltSalary;
     private Integer intPhone;
 

@@ -41,9 +41,7 @@ public class Chef implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Long intChefId;
-    @Column(length = 45)
     private String strChefName;
-    @Column(precision = 12, scale = 0)
     private Float fltSalary;
 
 }

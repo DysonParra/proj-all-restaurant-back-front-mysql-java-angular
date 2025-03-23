@@ -41,9 +41,7 @@ public class Customer implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Long intCustomerId;
-    @Column(length = 45)
     private String strCustomerName;
-    @Column(length = 45)
     private String strAddress;
     private Integer intPhone;
     @JoinColumn(name = "intWaiterId", referencedColumnName = "intWaiterId")

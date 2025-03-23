@@ -41,10 +41,9 @@ public class Supplier implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Long intSupplierId;
-    @Column(length = 45)
     private String strSupplierCity;
     @Lob
-    @Column(length = 65535, columnDefinition = "TEXT")
+    @Column(columnDefinition = "TEXT")
     private String txtSupplierName;
     private Integer intPhone;
     @JoinColumn(name = "intChefId", referencedColumnName = "intChefId")
