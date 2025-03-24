@@ -2,14 +2,14 @@ DROP DATABASE IF EXISTS `restaurant`;
 CREATE DATABASE IF NOT EXISTS `restaurant`;
 USE `restaurant`;
 
-CREATE TABLE IF NOT EXISTS `Chef` (
+CREATE TABLE IF NOT EXISTS `chef` (
     `chefId`                            BIGINT              NOT NULL,
     `chefName`                          VARCHAR(45)             NULL DEFAULT NULL,
     `salary`                            FLOAT                   NULL DEFAULT NULL,
     PRIMARY KEY (`chefId` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Meal` (
+CREATE TABLE IF NOT EXISTS `meal` (
     `mealId`                            BIGINT              NOT NULL,
     `name`                              VARCHAR(45)             NULL DEFAULT NULL,
     `price`                             FLOAT                   NULL DEFAULT NULL,
@@ -17,14 +17,14 @@ CREATE TABLE IF NOT EXISTS `Meal` (
     PRIMARY KEY (`mealId` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Order` (
+CREATE TABLE IF NOT EXISTS `order` (
     `orderId`                           BIGINT              NOT NULL,
     `customerId`                        BIGINT                  NULL DEFAULT NULL,
     `mealId`                            BIGINT                  NULL DEFAULT NULL,
     PRIMARY KEY (`orderId` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Supplier` (
+CREATE TABLE IF NOT EXISTS `supplier` (
     `supplierId`                        BIGINT              NOT NULL,
     `supplierCity`                      VARCHAR(45)             NULL DEFAULT NULL,
     `supplierName`                      TEXT(100)               NULL DEFAULT NULL,
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `Supplier` (
     PRIMARY KEY (`supplierId` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Waiter` (
+CREATE TABLE IF NOT EXISTS `waiter` (
     `waiterId`                          BIGINT              NOT NULL,
     `waiterName`                        VARCHAR(45)             NULL DEFAULT NULL,
     `salary`                            FLOAT                   NULL DEFAULT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `Waiter` (
     PRIMARY KEY (`waiterId` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Customer` (
+CREATE TABLE IF NOT EXISTS `customer` (
     `customerId`                        BIGINT              NOT NULL,
     `customerName`                      VARCHAR(45)             NULL DEFAULT NULL,
     `address`                           VARCHAR(45)             NULL DEFAULT NULL,
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `Customer` (
     PRIMARY KEY (`customerId` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Ingredient` (
+CREATE TABLE IF NOT EXISTS `ingredient` (
     `ingredientId`                      BIGINT              NOT NULL,
     `ingredientName`                    VARCHAR(45)             NULL DEFAULT NULL,
     `description`                       VARCHAR(45)             NULL DEFAULT NULL,
@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `Ingredient` (
     PRIMARY KEY (`ingredientId` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Provider` (
+CREATE TABLE IF NOT EXISTS `provider` (
     `providerId`                        BIGINT              NOT NULL,
     `supplierId`                        BIGINT                  NULL DEFAULT NULL,
     `ingredientId`                      BIGINT                  NULL DEFAULT NULL,

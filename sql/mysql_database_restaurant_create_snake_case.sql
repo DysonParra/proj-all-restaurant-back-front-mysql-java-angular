@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `supplier` (
     PRIMARY KEY (`supplier_id` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Waiter` (
+CREATE TABLE IF NOT EXISTS `waiter` (
     `waiter_id`                         BIGINT              NOT NULL,
     `waiter_name`                       VARCHAR(45)             NULL DEFAULT NULL,
     `salary`                            FLOAT                   NULL DEFAULT NULL,
