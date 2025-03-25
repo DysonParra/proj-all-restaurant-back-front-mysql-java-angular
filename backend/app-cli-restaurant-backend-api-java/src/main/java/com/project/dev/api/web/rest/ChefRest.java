@@ -88,7 +88,7 @@ public class ChefRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Chef")
+    @GetMapping("/chef")
     public CollectionModel<EntityModel<ChefDTO>> getAllEntities() {
         log.debug("REST request to get all entities type Chef");
         List<EntityModel<ChefDTO>> entities = null;
@@ -118,14 +118,14 @@ public class ChefRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Chef/pages")
+    @GetMapping("/chef/pages")
     public ResponseEntity<CollectionModel<EntityModel<ChefDTO>>> getAllEntitiesPaged(Pageable pageable) {
         log.debug("REST request to get a page of all entities type Chef");
         Page<ChefDTO> page = null;
         List<EntityModel<ChefDTO>> entities = null;
         try {
             page = entityService.getAllEntitiesPaged(pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/Chef/pages");
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/chef/pages");
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());
@@ -151,7 +151,7 @@ public class ChefRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PostMapping("/Chef")
+    @PostMapping("/chef")
     public ResponseEntity<?> saveEntity(@RequestBody ChefDTO entityDTO) {
         log.debug("POST request to save a new entity type Chef");
         EntityModel<ChefDTO> resource = null;
@@ -180,7 +180,7 @@ public class ChefRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PutMapping("/Chef/{id}")
+    @PutMapping("/chef/{id}")
     public ResponseEntity<?> updateEntity(@RequestBody ChefDTO entityDTO, @PathVariable String id) {
         return saveEntity(entityDTO);
     }
@@ -198,7 +198,7 @@ public class ChefRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Chef/{id}")
+    @GetMapping("/chef/{id}")
     public ResponseEntity<EntityModel<ChefDTO>> getEntity(@PathVariable String id) {
         log.debug(String.format("REST request to get the entity type Chef with id {} ", id));
         try {
@@ -224,7 +224,7 @@ public class ChefRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @DeleteMapping("/Chef/{id}")
+    @DeleteMapping("/chef/{id}")
     public ResponseEntity<?> deleteEntity(@PathVariable String id) {
         log.debug("DELETE request to delete the entity Chef with id : {}", id);
         try {
@@ -248,7 +248,7 @@ public class ChefRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Chef/search/{query}")
+    @GetMapping("/chef/search/{query}")
     public CollectionModel<EntityModel<ChefDTO>> searchEntities(@PathVariable String query) {
         log.debug("REST request to get the entities type Chef with the search : {} ", query);
         List<EntityModel<ChefDTO>> entities = null;
@@ -279,14 +279,14 @@ public class ChefRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/Chef/search/{query}/pages")
+    @GetMapping("/chef/search/{query}/pages")
     public ResponseEntity<CollectionModel<EntityModel<ChefDTO>>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type Chef with the search : {}", query);
         Page<ChefDTO> page = null;
         List<EntityModel<ChefDTO>> entities = null;
         try {
             page = entityService.searchEntitiesPaged(query, pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/Chef/search/{query}/pages/" + query);
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/chef/search/{query}/pages/" + query);
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());
