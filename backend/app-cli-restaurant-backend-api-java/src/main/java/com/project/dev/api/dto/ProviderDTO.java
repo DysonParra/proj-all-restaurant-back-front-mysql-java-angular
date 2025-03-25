@@ -35,7 +35,7 @@ import lombok.NoArgsConstructor;
 public class ProviderDTO {
 
     private Long intProviderId;
-    private Long intIngredientId;
     private Long intSupplierId;
+    private Long intIngredientId;
 
 }

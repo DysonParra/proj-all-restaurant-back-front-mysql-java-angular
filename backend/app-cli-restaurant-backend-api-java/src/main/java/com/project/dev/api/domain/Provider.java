@@ -42,7 +42,7 @@ public class Provider implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Long intProviderId;
-    private Long intIngredientId;
     private Long intSupplierId;
+    private Long intIngredientId;
 
 }
