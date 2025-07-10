@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ChefFacade}
+ * @overview        {ChefFacade}
  *
  * @version         2.0
  *

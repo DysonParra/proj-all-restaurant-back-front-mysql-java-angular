@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {SupplierState}
+ * @overview        {SupplierState}
  *
  * @version         2.0
  *

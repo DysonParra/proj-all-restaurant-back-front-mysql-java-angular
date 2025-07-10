@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MealDTO}
+ * @overview        {MealDTO}
  *
  * @version         2.0
  *

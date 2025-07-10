@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MealViewModel}
+ * @overview        {MealViewModel}
  *
  * @version         2.0
  *

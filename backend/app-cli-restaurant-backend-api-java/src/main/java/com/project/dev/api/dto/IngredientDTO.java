@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngredientDTO}
+ * @overview        {IngredientDTO}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {WaiterFacade}
+ * @overview        {WaiterFacade}
  *
  * @version         2.0
  *

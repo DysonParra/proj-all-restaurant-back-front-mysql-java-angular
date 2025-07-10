@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {OrderContainerComponent}
+ * @overview        {OrderContainerComponent}
  *
  * @version         2.0
  *

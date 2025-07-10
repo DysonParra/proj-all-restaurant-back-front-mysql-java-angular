@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngredientComponent}
+ * @overview        {IngredientComponent}
  *
  * @version         2.0
  *

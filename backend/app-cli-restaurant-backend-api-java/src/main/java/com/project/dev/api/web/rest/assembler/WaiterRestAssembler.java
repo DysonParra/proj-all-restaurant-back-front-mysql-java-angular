@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {WaiterRestAssembler}
+ * @overview        {WaiterRestAssembler}
  *
  * @version         2.0
  *

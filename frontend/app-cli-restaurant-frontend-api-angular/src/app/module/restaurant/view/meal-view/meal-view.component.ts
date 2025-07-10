@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MealViewComponent}
+ * @overview        {MealViewComponent}
  *
  * @version         2.0
  *

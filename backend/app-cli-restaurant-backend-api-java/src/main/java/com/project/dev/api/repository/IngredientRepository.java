@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngredientRepository}
+ * @overview        {IngredientRepository}
  *
  * @version         2.0
  *

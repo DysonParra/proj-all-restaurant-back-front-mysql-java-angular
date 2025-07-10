@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {WaiterDTO}
+ * @overview        {WaiterDTO}
  *
  * @version         2.0
  *

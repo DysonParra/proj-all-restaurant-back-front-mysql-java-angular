@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CustomerRestAssembler}
+ * @overview        {CustomerRestAssembler}
  *
  * @version         2.0
  *

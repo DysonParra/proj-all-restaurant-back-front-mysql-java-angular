@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {WaiterViewComponent}
+ * @overview        {WaiterViewComponent}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MealState}
+ * @overview        {MealState}
  *
  * @version         2.0
  *

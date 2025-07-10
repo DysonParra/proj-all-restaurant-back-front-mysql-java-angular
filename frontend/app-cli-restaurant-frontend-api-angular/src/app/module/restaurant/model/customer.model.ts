@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CustomerViewModel}
+ * @overview        {CustomerViewModel}
  *
  * @version         2.0
  *

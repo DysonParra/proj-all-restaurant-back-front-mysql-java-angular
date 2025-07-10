@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ChefRestAssembler}
+ * @overview        {ChefRestAssembler}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CustomerRepository}
+ * @overview        {CustomerRepository}
  *
  * @version         2.0
  *

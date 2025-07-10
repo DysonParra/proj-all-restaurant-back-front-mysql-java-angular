@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngredientRestAssembler}
+ * @overview        {IngredientRestAssembler}
  *
  * @version         2.0
  *

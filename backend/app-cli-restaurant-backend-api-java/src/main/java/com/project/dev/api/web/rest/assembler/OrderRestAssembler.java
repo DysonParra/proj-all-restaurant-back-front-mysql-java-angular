@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {OrderRestAssembler}
+ * @overview        {OrderRestAssembler}
  *
  * @version         2.0
  *

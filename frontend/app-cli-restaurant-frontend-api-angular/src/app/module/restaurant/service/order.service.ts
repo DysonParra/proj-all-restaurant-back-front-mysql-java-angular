@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {OrderService}
+ * @overview        {OrderService}
  *
  * @version         2.0
  *

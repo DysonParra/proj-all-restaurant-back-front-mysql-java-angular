@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngredientFacade}
+ * @overview        {IngredientFacade}
  *
  * @version         2.0
  *

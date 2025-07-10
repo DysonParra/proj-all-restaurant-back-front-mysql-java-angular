@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MealFacade}
+ * @overview        {MealFacade}
  *
  * @version         2.0
  *

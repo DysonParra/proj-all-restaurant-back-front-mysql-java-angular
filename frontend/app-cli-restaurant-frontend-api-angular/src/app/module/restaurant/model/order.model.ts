@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {OrderViewModel}
+ * @overview        {OrderViewModel}
  *
  * @version         2.0
  *

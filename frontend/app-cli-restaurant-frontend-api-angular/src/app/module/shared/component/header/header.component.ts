@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {HeaderComponent}
+ * @overview        {HeaderComponent}
  *
  * @version         2.0
  *
@@ -44,31 +44,38 @@ export class HeaderComponent implements OnInit {
                 name: 'Chef',
                 route: 'chef',
                 items: []
-            },            {
+            },
+            {
                 name: 'Customer',
                 route: 'customer',
                 items: []
-            },            {
+            },
+            {
                 name: 'Ingredient',
                 route: 'ingredient',
                 items: []
-            },            {
+            },
+            {
                 name: 'Meal',
                 route: 'meal',
                 items: []
-            },            {
+            },
+            {
                 name: 'Order',
                 route: 'order',
                 items: []
-            },            {
+            },
+            {
                 name: 'Provider',
                 route: 'provider',
                 items: []
-            },            {
+            },
+            {
                 name: 'Supplier',
                 route: 'supplier',
                 items: []
-            },            {
+            },
+            {
                 name: 'Waiter',
                 route: 'waiter',
                 items: []

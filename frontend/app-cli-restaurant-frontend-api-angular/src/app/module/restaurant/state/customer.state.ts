@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CustomerState}
+ * @overview        {CustomerState}
  *
  * @version         2.0
  *

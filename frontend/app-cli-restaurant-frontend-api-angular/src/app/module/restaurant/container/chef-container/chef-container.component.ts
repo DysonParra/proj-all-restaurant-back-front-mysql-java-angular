@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ChefContainerComponent}
+ * @overview        {ChefContainerComponent}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ChefRepository}
+ * @overview        {ChefRepository}
  *
  * @version         2.0
  *

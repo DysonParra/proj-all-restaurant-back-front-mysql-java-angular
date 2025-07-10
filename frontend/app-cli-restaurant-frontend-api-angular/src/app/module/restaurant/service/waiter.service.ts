@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {WaiterService}
+ * @overview        {WaiterService}
  *
  * @version         2.0
  *

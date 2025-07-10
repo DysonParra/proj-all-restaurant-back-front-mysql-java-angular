@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ChefDTO}
+ * @overview        {ChefDTO}
  *
  * @version         2.0
  *

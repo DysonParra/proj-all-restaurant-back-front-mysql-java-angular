@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ChefViewModel}
+ * @overview        {ChefViewModel}
  *
  * @version         2.0
  *
